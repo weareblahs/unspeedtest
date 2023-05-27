@@ -1,0 +1,39 @@
+{
+    "type": "result",
+    "timestamp": "2023-05-27T18:26:54Z",
+    "ping": {
+        "jitter": 2.7850000000000001,
+        "latency": 12.710000000000001
+    },
+    "download": {
+        "bandwidth": 14726623,
+        "bytes": 165532475,
+        "elapsed": 11400
+    },
+    "upload": {
+        "bandwidth": 5867788,
+        "bytes": 39248922,
+        "elapsed": 6711
+    },
+    "isp": "Maxis Communications",
+    "interface": {
+        "internalIp": "192.168.0.200",
+        "name": "",
+        "macAddr": "10:27:F5:65:99:44",
+        "isVpn": false,
+        "externalIp": "113.211.210.162"
+    },
+    "server": {
+        "id": 48653,
+        "name": "KS-IT Solutions Sdn Bhd",
+        "location": "Shah Alam",
+        "country": "Malaysia",
+        "host": "speedtest.ks-itsolutions.com",
+        "port": 8080,
+        "ip": "103.95.32.18"
+    },
+    "result": {
+        "id": "aa0f1cf0-e064-40f5-ab54-12cf76277f30",
+        "url": "https://www.speedtest.net/result/c/aa0f1cf0-e064-40f5-ab54-12cf76277f30"
+    }
+}

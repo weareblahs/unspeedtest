@@ -1,0 +1,3 @@
+echo Replacing index file with version without data...
+cp def_templates/index.html apache2/index.html
+echo Done!
