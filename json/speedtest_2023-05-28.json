@@ -1,20 +1,21 @@
 {
     "type": "result",
-    "timestamp": "2023-05-27T18:26:54Z",
+    "timestamp": "2023-05-28T03:32:57Z",
     "ping": {
-        "jitter": 2.7850000000000001,
-        "latency": 12.710000000000001
+        "jitter": 0.56200000000000006,
+        "latency": 11.130000000000001
     },
     "download": {
-        "bandwidth": 14726623,
-        "bytes": 165532475,
-        "elapsed": 11400
+        "bandwidth": 15100116,
+        "bytes": 185453312,
+        "elapsed": 12711
     },
     "upload": {
-        "bandwidth": 5867788,
-        "bytes": 39248922,
-        "elapsed": 6711
+        "bandwidth": 5701512,
+        "bytes": 41859677,
+        "elapsed": 7406
     },
+    "packetLoss": 0,
     "isp": "Maxis Communications",
     "interface": {
         "internalIp": "192.168.0.200",
@@ -24,16 +25,16 @@
         "externalIp": "113.211.210.162"
     },
     "server": {
-        "id": 48653,
-        "name": "KS-IT Solutions Sdn Bhd",
-        "location": "Shah Alam",
+        "id": 49657,
+        "name": "Maxis",
+        "location": "Petaling Jaya",
         "country": "Malaysia",
-        "host": "speedtest.ks-itsolutions.com",
+        "host": "kpgookla02.maxis.com.my",
         "port": 8080,
-        "ip": "103.95.32.18"
+        "ip": "202.75.141.35"
     },
     "result": {
-        "id": "aa0f1cf0-e064-40f5-ab54-12cf76277f30",
-        "url": "https://www.speedtest.net/result/c/aa0f1cf0-e064-40f5-ab54-12cf76277f30"
+        "id": "957d5a58-ce84-4c67-a85d-25bfb939f2df",
+        "url": "https://www.speedtest.net/result/c/957d5a58-ce84-4c67-a85d-25bfb939f2df"
     }
 }
