@@ -53,7 +53,7 @@ def format(s):
 # Create chart image for today's speedtest
 import matplotlib.pyplot as plt
 name = ['','Upload','Download']
-data = ['0',str(round((data2["download"]["bandwidth"])/125000,2)), str(round((data2["upload"]["bandwidth"])/125000,2))]
+data = ['0',str(round((data2["upload"]["bandwidth"])/125000,2)), str(round((data2["download"]["bandwidth"])/125000,2))]
 colors = ['red', 'green']
 plt.bar(name,data,color=colors)
 plt.title('Speedtest result on ' + str(datetime.date.today()))
