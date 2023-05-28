@@ -9,7 +9,7 @@ echo 'properly.'
 echo ''
 read -n 1 -s -r -p "Press any key to start installation of unspeedtest."
 echo "Checking if required software is installed..."
-sudo apt install python apache2
+sudo apt install python3 apache2
 echo "Installing Python requirements..."
 pip install -r requirements.txt
 ln -s $(pwd)/apache /var/www/html/unspeedtest
