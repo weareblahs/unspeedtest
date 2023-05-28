@@ -11,5 +11,5 @@ pip install -r requirements.txt
 ln -s $(pwd)/apache /var/www/html/unspeedtest
 echo $(pwd) >> dir
 chmod +x *.sh
-crontab mycron
+crontab cron
 echo "unspeedtest is accessible via http://[LOCAL_IP]/unspeedtest."
