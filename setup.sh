@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "unspeedtest by Tan (weareblahs)"
 echo ''
 echo "If you didn't install Speedtest yet (or you installed speedtest-cli instead of"
