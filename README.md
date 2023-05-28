@@ -1,4 +1,4 @@
-![image](https://github.com/weareblahs/unspeedtest/assets/37889443/78c7a3ca-589b-4194-86ee-abed32b9b915)
+![image](https://github.com/weareblahs/unspeedtest/assets/37889443/faae9bfa-a247-42fb-b0f4-945ccb89a400)
 # Note
 Although this script is written on Python, I suggest you to run it on a Raspberry Pi as the setup scripts are optimized for Raspberry Pi OS (Debian).
 # Why did I do this?
