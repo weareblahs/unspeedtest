@@ -1,11 +1,13 @@
 # Importing stuffs
 from datetime import date
 import os
+print("Welcome to unspeedtest.")
 json_out_fn = "json/speedtest_" + str(date.today()) + ".json"
 # Pre-writing existing data clearing
 open(json_out_fn, 'w').close()
 
 # Start speedtest process
+print("Starting Speedtest.net speed test...")
 os.system("speedtest -f json-pretty >>" + str(json_out_fn))
 # Importing stuffs
 import datetime
@@ -18,7 +20,7 @@ import json
 data2 = json.loads(data)
 
 import math
-
+print("Generating HTML Table...")
 dl = round((data2["download"]["bandwidth"])/125000,2) 
 ul = round((data2["upload"]["bandwidth"])/125000,2) 
 download = dl, " Mbps"
@@ -49,7 +51,7 @@ def format(s):
    s = s.replace('<td>(','<td>')
    s = s.replace(')</td>','</td>')
    return s
-
+print("Generating SVG chart...")
 # Create chart image for today's speedtest
 import matplotlib.pyplot as plt
 name = ['','Upload','Download']
@@ -60,14 +62,14 @@ plt.title('Speedtest result on ' + str(datetime.date.today()))
 plt.xlabel('')
 plt.ylabel('Speed (in Mbps)')
 plt.savefig("apache/latestresult.svg")
-
+print("HTML table code:")
 print(format(htmltext))
 f = open("apache/index.html",'r')
 filedata = f.read()
 f.close()
 
 newdata = filedata.replace("<!--STDATA-->", format(htmltext))
-
+print("Writing HTML file...")
 f = open("apache/index.html",'w')
 f.write(newdata)
 f.close()
