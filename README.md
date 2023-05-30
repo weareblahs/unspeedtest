@@ -1,6 +1,6 @@
 ![image](https://github.com/weareblahs/unspeedtest/assets/37889443/faae9bfa-a247-42fb-b0f4-945ccb89a400)
 # Currently experienced bugs
- - unspeedtest won't run at 12am everyday although a cronjob was set for this task
+See [here](https://github.com/weareblahs/unspeedtest/blob/main/fixes.md).
 # Note
 Although this script is written on Python, I suggest you to run it on a Raspberry Pi as the setup scripts are optimized for Raspberry Pi OS (Debian).
 # Why did I do this?
@@ -21,7 +21,7 @@ sudo apt-get install speedtest
  - After running these commands, run `speedtest` and accept EULA. It is recommended to let the first speedtest end to see if it's working from your side.
 ## OPTIONAL: Before setup starts
 To modify when will the automated speedtest starts, edit `cron` from the `unspeedtest` directory. 
- - By default, `0 0 0 0 0` means that unspeedtest will run automated speedtests on 12am everyday if the device is turned on. To generate cron expressions, use `https://crontab.guru/` or `https://crontab.cronhub.io/` and replace `0 0 0 0 0` with what you've got from the generators.
+ - By default, `0 0 * * *` means that unspeedtest will run automated speedtests on 12am everyday if the device is turned on. To generate cron expressions, use `https://crontab.guru/` or `https://crontab.cronhub.io/` and replace `0 0 0 0 0` with what you've got from the generators.
 3. Make `setup.sh` executable and start the setup. Do note that the setup script won't work if you're not running with `sudo` permissions.
 ```bash
 chmod +x setup.sh

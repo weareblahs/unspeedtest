@@ -1,0 +1,2 @@
+ - unspeedtest won't run at 12am everyday although a cronjob was set for this task （2023/05/30）
+    - FIXED: Changed `0 0 0 0 0` to `0 0 * * *` on the `cron` file. 
