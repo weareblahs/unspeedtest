@@ -9,9 +9,9 @@ echo 'properly.'
 echo ''
 read -n 1 -s -r -p "Press any key to start installation of unspeedtest."
 echo "Checking if required software is installed..."
-sudo apt install python3 apache2
+sudo apt install python3 apache2 python3-pip
 echo "Installing Python requirements..."
-pip install -r requirements.txt
+pip install -r requirements.txt --break-system-packages
 ln -s $(pwd)/apache /var/www/html/unspeedtest
 echo $(pwd) >> dir
 chmod +x *.sh
