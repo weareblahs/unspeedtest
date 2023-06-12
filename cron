@@ -1,1 +1,1 @@
-0 0 * * *  root    ~/unspeedtest/unspeedtest.sh || ( cd / && run-parts --report /etc/cron.monthly )
+0 0 * * *  root    cd ~/unspeedtest && ./unspeedtest.sh || ( cd / && run-parts --report /etc/cron.monthly )
