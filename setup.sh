@@ -8,6 +8,7 @@ echo 'run for the first time and accept EULA in order to let unspeedtest work'
 echo 'properly.'
 echo ''
 read -n 1 -s -r -p "Press any key to start installation of unspeedtest."
+echo ''
 echo "Checking if required software is installed..."
 sudo apt install python3 apache2 python3-pip python3-tabulate python3-matplotlib
 echo "Installing Python requirements..."
